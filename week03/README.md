@@ -55,6 +55,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan 
 ### TUGAS
 #### Buatlah sebuah program yang dapat menampilkan bilangan prima dari angka 0 sampai 201 menggunakan Dart. Ketika bilangan prima ditemukan, maka tampilkan nama lengkap dan NIM Anda.
 - Kode
+
 ![Alt text](docs/tugas_kode.png)
 - Output
 ![Alt text](docs/tugas_output1.png)
