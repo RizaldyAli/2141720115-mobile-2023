@@ -126,6 +126,7 @@ Gunakan fungsi tukar() di dalam main() sehingga tampak jelas proses pertukaran v
 #### Langkah 4
 Tambahkan kode program berikut di dalam scope void main(), lalu coba eksekusi (Run) kode Anda.
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki. 
+
 ![Alt text](<docs/5langkah4.png>)
 - Ketika menjalankan program diatas, maka terjadi eror dikarenakan pemanggilan var mahasiswa yang belum diberikan nilai apapun. Lalu perbaikan dengan pemberian nilai pada variabel mahasiswa sesuai dengan tipe anotasi recordnya yaitu String dan integer
 
@@ -145,16 +146,17 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gantilah salah satu isi
 - Jenis parameter di Function yaitu : <br>
 a. Positional Optional Parameter (Parameter Opsional Bersyarat)<br>
 Positional Optional Parameter adalah parameter yang tidak harus diberikan saat memanggil fungsi dan bisa diabaikan jika tidak diperlukan
-![Alt text](<docs/tugas 3a.png>)
+![Alt text](<docs/tugas 3a.png>)<br>
 b. Default Value (Parameter Default)<br>
 Parameter Default adalah parameter opsional dengan nilai default yang akan digunakan jika argumen tidak disediakan saat memanggil fungsi
-![Alt text](<docs/tugas 3b.png>)
+![Alt text](<docs/tugas 3b.png>)<br>
 c. Named Parameter (Parameter Opsional Dinamis) <br>
 Parameter ini tidak harus diberikan saat memanggil fungsi, dan bisa menyebutkannya dengan nama saat memanggil fungsi
 ![Alt text](<docs/tugas 3c.png>)
 
 #### 4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
-- Functions sebagai first-class object adalah mengacu pada kemampuan untuk memperlakukan fungsi seperti halnya objek lain seperti string, angka, atau objek lainnya. Artinya yaitu dapat mengoperasikan fungsi seperti variabel, menyimpannya dalam variabel, mengirimkannya sebagai argumen ke fungsi lain, mengembalikannya dari fungsi lain, dan sebagainya. Untuk contoh sintaks nya seperti gambar di bawah ini
+- Functions sebagai first-class object adalah mengacu pada kemampuan untuk memperlakukan fungsi seperti halnya objek lain seperti string, angka, atau objek lainnya. Artinya yaitu dapat mengoperasikan fungsi seperti variabel, menyimpannya dalam variabel, mengirimkannya sebagai argumen ke fungsi lain, mengembalikannya dari fungsi lain, dan sebagainya. Untuk contoh sintaks nya seperti gambar di bawah ini.
+
 ![Alt text](<docs/tugas 4.png>)
 #### 5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
 - Anonymous Function dalam Dart adalah fungsi yang tidak memiliki nama dan sering disebut sebagai lambda atau closure. Fungsi ini sering digunakan untuk membuat kode yang lebih ringkas, dan dapat diberikan kepada variabel atau digunakan dalam berbagai konteks, seperti menambahkannya atau menghapusnya dari koleksi. Fungsi anonim memiliki parameter yang mirip dengan fungsi bernama dan dideklarasikan tanpa nama fungsi. Contoh sintaks bisa dilihat di gambar ini
@@ -163,8 +165,10 @@ Parameter ini tidak harus diberikan saat memanggil fungsi, dan bisa menyebutkann
 - Perbedaan Lexical Scope dan Lexical Closure<br>
 a. Lexical Scope (Lingkup Lexical): Variabel memiliki ruang lingkup yang ditentukan oleh struktur kode secara statis. Anda bisa melihat di mana variabel berada dengan melihat tata letak kode.<br>
 ![Alt text](<docs/tugas 6a.png>)
+<br>
 b. Lexical Closures (Penutupan Lexical): Fungsi dapat mengakses variabel-variabel dalam ruang lingkup sekitarnya, bahkan ketika fungsi tersebut digunakan di luar ruang lingkup aslinya. Fungsi "menutup" (close) variabel-variabel tersebut sehingga tetap dapat diakses.
-![Alt text](<docs/tugas 6b.png>)
+![Alt text](<docs/tugas 6b.png>)<br>
 #### 7. Jelaskan dengan contoh cara membuat return multiple value di Functions! 
 - Dalam Dart, kita bisa mengembalikan beberapa nilai dari sebuah fungsi dengan mengemas nilai ke dalam sebuah objek atau tipe data yang sesuai. Salah satu cara yang umum adalah mengembalikan list. Ini adalah kode membuat fungsi yang mengembalikan multiple value menggunakan list.
+
 ![Alt text](<docs/tugas 7.png>)
