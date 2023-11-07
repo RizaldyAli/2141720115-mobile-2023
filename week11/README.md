@@ -18,7 +18,7 @@
 
 > Langkah 13 (Method `dispose()`) digunakan untuk membersihkan sumber daya, di mana Anda melepaskan objek `scrollController` agar tidak menyebabkan masalah memori atau sumber daya ketika widget tidak lagi digunakan.
 - Hasil Akhir Praktikum 1
-![Praktikum 1](docs/praktikum1.gif)
+> ![Praktikum 1](docs/praktikum1.gif)
 - Penjelasan : Output diatas adalah hasil running dari praktikum 1 yaitu memahami Dasar State dengan Model-View untuk membuat list penjadwalan.
 ---
 <br>
@@ -33,7 +33,7 @@
 > Method `completedCount` digunakan untuk menghitung jumlah tugas yang telah selesai dalam rencana, sedangkan method `completenessMessage` menghasilkan pesan yang menginformasikan sejauh mana rencana telah diselesaikan dengan menggabungkan jumlah tugas yang telah selesai dan total jumlah tugas dalam rencana. Ini membantu memberikan informasi visual tentang kemajuan rencana kepada pengguna.
 ### 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 - Hasil Akhir Praktikum 2
-![Praktikum 2](docs/praktikum2.gif)
+> ![Praktikum 2](docs/praktikum2.gif)
 - Penjelasan : Otuput dari Praktikum 2 ini sebenarnya sama seperti Praktikum 1 yaitu untuk membuat list penjadwalan, akan tetapi berbeda dalam metode pendekatan yang digunakan.
 ---
 <br>
@@ -47,5 +47,5 @@
 > Alur navigasi tersebut dimulai dengan `MaterialApp` sebagai root aplikasi. Kemudian, `PlanProvider` digunakan untuk berbagi data rencana ke seluruh aplikasi. Dari sana, navigasi dilakukan dari `PlanCreatorScreen` (untuk membuat atau mengedit rencana) ke `PlanScreen` (untuk melihat daftar rencana). `Column` dan `Expanded` digunakan untuk mengatur elemen dalam tampilan. `Scaffold` memberikan kerangka tampilan aplikasi, dan `SafeArea` memastikan tampilan aman pada berbagai perangkat.
 ### 3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 - Hasil Akhir Praktikum 3
-![Praktikum 3](docs/praktikum3.gif)
+> ![Praktikum 3](docs/praktikum3.gif)
 - Penjelasan : Output dari Praktikum 3 tersebut adalah membuat penjadwalan yang didalamnya bisa menambahkan sub bagan.
