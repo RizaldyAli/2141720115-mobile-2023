@@ -22,3 +22,11 @@ Nama : Rizaldy Ali Machfuddin
 <br>
 Penjelasan :
 substring digunakan untuk mendapatkan string dengan mengambil 450 karakter pertama, sedangkan catchError adalah metode yang dipanggil jika terjadi kesalahan saat menjalankan future.
+
+#### Soal 4
+Penjelasan:
+Pada langkah 1, kode tersebut merupakan fungsi asinkron untuk menunda eksekusi selama tiga detik setiap fungsinya. Sedangkan pada langkah kedua, fungsi asinkron yang menunggu 3 fungsi pada langkah 1 yang akan menghitung dan menyimpan total dalam variabel result
+
+Output: 
+![Alt text](docs/soal4.gif)
+<br>
