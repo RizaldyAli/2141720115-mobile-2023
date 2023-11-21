@@ -37,6 +37,12 @@ class _FuturePageState extends State<FuturePage> {
   late Completer completer;
 
   void returnFG() {
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+
     FutureGroup<int> futureGroup = FutureGroup<int>();
     futureGroup.add(returnOneAsync());
     futureGroup.add(returnTwoAsync());
@@ -127,14 +133,14 @@ class _FuturePageState extends State<FuturePage> {
               //   setState(() {});
               // });
               // count();
-            //   getNumber().then((value) {
-            //     setState(() {
-            //       result = value.toString();
-            //     });
-            //   }).catchError((e) {
-            //     result = 'An error occurred';
-            //   });
-            returnFG();
+              //   getNumber().then((value) {
+              //     setState(() {
+              //       result = value.toString();
+              //     });
+              //   }).catchError((e) {
+              //     result = 'An error occurred';
+              //   });
+              returnFG();
             },
           ),
           const Spacer(),
