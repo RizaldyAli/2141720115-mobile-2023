@@ -61,3 +61,11 @@ Perbedaan langkah 1 dan 4 adalah pada pengimplementasian grouping future. Di man
 Output: 
 > ![Alt text](docs/soal9.gif)
 <br>
+
+#### Soal 10
+Penjelasan: 
+Fungsi returnError() menjalankan operasi asinkron kemudian menjalankan Exception setelah delay 2 detik. Sedangkan pada fungsi handleError() ketika ada exception yang dihasilkan returnError(), catch akan menangkap dan setState akan mengupdate state dengan pesan error
+<br>
+
+Output: 
+> ![Alt text](docs/soal10.gif)
