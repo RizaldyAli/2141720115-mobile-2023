@@ -46,3 +46,8 @@ Pada langkah 5, sama seperti langkah sebelumnya namun jika ada kesalahan selama 
 Output: 
 > ![Alt text](docs/soal6.gif)
 <br>
+
+#### Soal 7
+Output: 
+> ![Alt text](docs/soal7.gif)
+<br>
