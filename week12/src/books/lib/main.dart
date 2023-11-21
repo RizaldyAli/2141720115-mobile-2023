@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'dart:async';
+import 'package:async/async.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
@@ -27,21 +28,25 @@ class MyApp extends StatelessWidget {
 class FuturePage extends StatefulWidget {
   const FuturePage({super.key});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   @override
   State<FuturePage> createState() => _FuturePageState();
 }
 
 class _FuturePageState extends State<FuturePage> {
   String result = '';
+  late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+  }
+
   Future<int> returnOneAsync() async {
     await Future.delayed(const Duration(seconds: 3));
     return 1;
@@ -94,7 +99,12 @@ class _FuturePageState extends State<FuturePage> {
               //   result = 'An error occured';
               //   setState(() {});
               // });
-              count();
+              // count();
+              getNumber().then((value) {
+                setState(() {
+                  result = value.toString();
+                });
+              });
             },
           ),
           const Spacer(),
