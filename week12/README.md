@@ -73,3 +73,12 @@ Output:
 #### Soal 11
 > ![Alt text](docs/soal11.png)
 <br>
+
+#### Soal 12
+Penjelasan:
+Bisa, karena flutter web yang menggunakan API Geolocation langsung dari browser
+
+Output: 
+> ![Alt text](docs/soal12.gif)
+<br>
+
