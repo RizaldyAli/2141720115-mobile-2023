@@ -69,3 +69,7 @@ Fungsi returnError() menjalankan operasi asinkron kemudian menjalankan Exception
 
 Output: 
 > ![Alt text](docs/soal10.gif)
+
+#### Soal 11
+> ![Alt text](docs/soal11.png)
+<br>
