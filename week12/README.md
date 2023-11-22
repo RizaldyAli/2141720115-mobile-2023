@@ -90,3 +90,12 @@ Output:
 >![Alt text](docs/soal13.gif)
 <br>
 
+#### Soal 14
+Penjelasan:
+Tetap sama, karena hanya menambah pesan error jika terjadi error
+
+Output: 
+> ![Alt text](docs/soal14.gif)
+<br>
+
+
