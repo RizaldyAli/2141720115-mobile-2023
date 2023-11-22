@@ -1,3 +1,4 @@
+import 'package:books/navigation_second.dart';
 import 'package:flutter/material.dart';
 
 class NavigationFirst extends StatefulWidget {
@@ -19,7 +20,7 @@ class _NavigationFirstState extends State<NavigationFirst> {
     return Scaffold(
       backgroundColor: color,
       appBar: AppBar(
-        title: const Text('Navigation First Screen (Yofandra)'),
+        title: const Text('Navigation First Screen (Rizaldy)'),
       ),
       body: Center(
           child: ElevatedButton(child: const Text('Change Color'),

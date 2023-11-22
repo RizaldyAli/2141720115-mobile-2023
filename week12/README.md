@@ -102,3 +102,10 @@ Output:
 > ![Alt text](docs/soal15.png)
 <br>
 
+#### Soal 16
+Penjelasan:
+Maka background akan berubah warna sesuai dengan nama buttonnya. Karena Navigation.pop() pada masing-masing button berisi parameter color yang telah ditentukan pada buttonnya.
+
+Output: 
+> ![Alt text](docs/soal16.gif)
+<br>
