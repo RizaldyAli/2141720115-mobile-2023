@@ -109,3 +109,11 @@ Maka background akan berubah warna sesuai dengan nama buttonnya. Karena Navigati
 Output: 
 > ![Alt text](docs/soal16.gif)
 <br>
+
+#### Soal 17
+Penjelasan:
+Sama seperti praktikum sebelumnya namun akan memunculkan alert ketika klik button. Pada praktikum ini menggunakan AlertDialog() untuk memunculkan alert setiap button change color
+
+Output: 
+> ![Alt text](docs/soal17.gif)
+<br>
