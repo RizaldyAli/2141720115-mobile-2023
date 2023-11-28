@@ -67,3 +67,11 @@ Hal ini terjadi dikarenakan ketika button new random number, maka akan menghasil
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.<br>
 ![Alt text](docs/soal11.gif)<br>
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".<br>
+## Praktikum 6 - StreamBuilder
+### Soal 12
+- Jelaskan maksud kode pada langkah 3 dan 7 !<br>
+1. Kode langkah 3 adalah kode yang mendefinisikan kelas NumberStream yang memiliki metode getNumber. Metode ini mengembalikan Stream<int> yang menghasilkan nilai acak antara 0 dan 9 setiap detiknya menggunakan Stream.periodic dan Random. Maka, kelas ini menyediakan aliran (stream) bilangan bulat acak dengan interval waktu satu detik.<br>
+2. Kode langkah 7 adalah widget StreamBuilder digunakan untuk membangun antarmuka pengguna yang merespons perubahan pada Stream. Dalam contoh ini, StreamBuilder menggunakan numberStream sebagai sumber data, memperbarui antarmuka secara otomatis ketika data baru tiba. Kondisi hasError menangani kesalahan, dan jika ada data, teks besar ditampilkan di tengah layar. Jika tidak ada data, widget dikembalikan sebagai kosong.<br>
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.<br>
+![Alt text](docs/soal12.gif)<br>
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".<br>
