@@ -56,10 +56,6 @@ Kode langkah 1-3 mendeklarasikan dan menginisialisasi objek StreamTransformer <i
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.<br>
 ![Alt text](docs/soal9.gif)<br>
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".<br>
-### Soal 10
-- Jelaskan mengapa error itu bisa terjadi ?<br>
-![Alt text](docs/soal10.png)<br>
-Error diatas terjadi karena kita saya mencoba menambahkan dua subscription pada stream yang sama tanpa membatalkan subscription sebelumnya. Hal ini terjadi ketika inisialisasi subscription2 pada method initState() karena sudah ada inisialisasi subscription untuk menangani stream yang sama pada satu waktu<br>
 ## Praktikum 5 - Multiple Stream Subscription
 ### Soal 10
 - Jelaskan mengapa error itu bisa terjadi ?<br>
