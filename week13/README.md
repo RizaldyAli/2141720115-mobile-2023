@@ -45,5 +45,14 @@ Kode langkah 13-15 akan membuat handling ketika terjadi sebuah error menggunakan
 - Jelaskan maksud kode langkah 1-3 tersebut!<br>
 Kode langkah 1-3 mendeklarasikan dan menginisialisasi objek StreamTransformer <int, int> dengan nama transformer. Transformer ini mengubah setiap data dalam stream angka dengan mengalikannya dengan 10, menangani kesalahan dengan mengirimkan nilai -1, dan menutup sink saat stream selesai. Selanjutnya, kode menggunakan transformer tersebut untuk mengubah data dalam stream dari objek numberStreamController, dan hasilnya diobservasi. Setiap kali ada perubahan, nilai terakhir (lastNumber) dalam state diperbarui, dan jika terjadi kesalahan, nilai -1 akan di-set ke dalam state.<br>
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.<br>
-![Alt text](docs/soal8.gif)<br>
+![Alt text](docs/soal7.gif)<br>
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".<br>
+## Praktikum 4 - Subscribe ke Stream Events
+### Soal 9
+- Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!<br>
+1. Kode langkah 2 untuk melakukan langganan pada stream agar mendapatkan informasi ataupun output dari stream<br>
+2. Kode langkah 6 untuk pembatalan subscribe pada stream. Jadi ketika screen tidak ditampilkan, metode ini akan dipanggil. Hal ini berguna untuk membersihkan sumber daya dan menghemat penyimpanan<br>
+3. Kode langkah 8 adalah fungsi addRandomNumber membuat objek Random untuk menghasilkan angka acak antara 0 dan 9. Selanjutnya, fungsi tersebut memeriksa apakah numberStreamController sudah ditutup (closed). Jika belum ditutup, nilai acak tersebut ditambahkan ke dalam stream menggunakan metode addNumberToSink pada objek numberStream. Jika numberStreamController sudah ditutup, maka nilai -1 akan di-set ke dalam state lastNumber. Ini bertujuan untuk menghindari penambahan data ke dalam stream yang sudah ditutup.<br>
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.<br>
+![Alt text](docs/soal9.gif)<br>
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".<br>

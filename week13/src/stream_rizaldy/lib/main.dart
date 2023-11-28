@@ -39,12 +39,29 @@ class _StreamHomePageState extends State<StreamHomePage> {
   late StreamController numberStreamController;
   late NumberStream numberStream;
   late StreamTransformer transformer;
+  late StreamSubscription subscription;
 
   @override
   void initState() {
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
     Stream stream = numberStreamController.stream;
+    subscription = stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    });
+
+    subscription.onError((error) {
+      setState(() {
+        lastNumber = -1;
+      });
+    });
+    
+    subscription.onDone(() {
+      print('onDone was called');
+    });
+
     // stream.transform(transformer).listen((event) {
     //   setState(() {
     //     lastNumber = event;
@@ -70,8 +87,9 @@ class _StreamHomePageState extends State<StreamHomePage> {
 
   @override
   void dispose() {
-    numberStreamController.close();
+    // numberStreamController.close();
     super.dispose();
+    subscription.cancel();
   }
 
   void changeColor() async {
@@ -88,10 +106,21 @@ class _StreamHomePageState extends State<StreamHomePage> {
   }
 
   void addRandomNumber() {
-    // Random random = Random();
-    // int myNum = random.nextInt(10);
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    if (!numberStreamController.isClosed) {
+      numberStream.addNumberToSink(myNum);
+    } else {
+      setState(() {
+        lastNumber = -1;
+      });
+    }
     // numberStream.addNumberToSink(myNum);
-    numberStream.addError();
+    // numberStream.addError();
+  }
+
+  void stopStream() {
+    numberStreamController.close();
   }
 
   @override
@@ -113,6 +142,10 @@ class _StreamHomePageState extends State<StreamHomePage> {
             ElevatedButton(
               onPressed: () => addRandomNumber(),
               child: const Text('New Random Number'),
+            ),
+            ElevatedButton(
+              onPressed: () => stopStream(),
+              child: const Text('Stop Subscription'),
             ),
           ],
         ),
