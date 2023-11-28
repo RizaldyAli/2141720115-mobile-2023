@@ -75,3 +75,14 @@ Hal ini terjadi dikarenakan ketika button new random number, maka akan menghasil
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.<br>
 ![Alt text](docs/soal12.gif)<br>
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".<br>
+### Soal 13
+- Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ? <br>
+Praktikum ini menciptakan aplikasi Flutter sederhana yang menggunakan pola BLoC (Business Logic Component) untuk mengelola logika bisnis dan pembaruan UI. Konsep pola BLoC terletak pada pembuatan kelas RandomNumberBloc yang bertanggung jawab untuk menghasilkan angka acak dan mengelola aliran data. Pola ini membantu memisahkan logika bisnis dari antarmuka pengguna.<br>
+Pola BLoC diterapkan pada cara berikut: 
+1. RandomNumberBloc memiliki dua StreamController: satu untuk input (_generateRandomController) dan satu untuk output (_randomNumberController).<br>
+2. Melalui metode generateRandom, komponen luar dapat memicu pembangkitan angka acak.<br>
+3. Pada saat inisialisasi RandomNumberBloc, sebuah listener ditambahkan ke _generateRandomController.stream yang memunculkan angka acak ke _randomNumberController.<br>
+4. RandomScreen kemudian menggunakan StreamBuilder untuk mendengarkan perubahan pada _bloc.randomNumber dan mengupdate UI dengan angka acak yang dihasilkan.<br>
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.<br>
+![Alt text](docs/soal13.gif)<br>
+- Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".<br>
